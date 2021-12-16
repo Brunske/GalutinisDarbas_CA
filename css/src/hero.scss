@@ -1,0 +1,63 @@
+.hero {
+    position: relative;
+    margin-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 200px 0;
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1C1C1C;
+        opacity: 0.63;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .form-box {
+        max-width: 500px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+
+        .form-row {
+            display: flex;
+        }
+
+        .radio-input-wrap {
+            input {
+                display: none;
+            }
+
+            input:checked ~ label:before {
+                background: red;
+            }
+
+            label {
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                    border-radius: 50%;
+                    border: 1px solid #41D395;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}
