@@ -1,0 +1,34 @@
+.socialMedia{
+
+    padding: 20px 0;
+    position: relative;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+
+        .description{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            h2{
+                font-size: 20px;
+            }
+
+            span{
+                font-size: 14px;
+                font-weight: 400;
+                color: #86878B;
+            }
+        }
+
+        .socials{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 50%;
+        }
+    }
+}

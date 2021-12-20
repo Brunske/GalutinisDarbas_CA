@@ -7,49 +7,220 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="images/logo.svg" alt="Logo">
+            <img src="images/logo.svg" alt="Company logo">
             <nav>
                 <ul>
-                    <li>Features</li>
-                    <li>About</li>
-                    <li>Pricing</li>
-                    <li>Reviews</li>
-                    <li>Contact</li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="features">
             <div class="container">
-                <div class="form-box">
-                    <form>
-                        <div class="form-row">
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-monthly" checked>
-                                <label for="subscription-monthly">Monthly</label>
-                            </div>
 
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-yearly">
-                                <label for="subscription-yearly">Yearly</label>
+                <div class="content">
+                    <img id="hero-company-logo" src="images/logo.svg" alt="Company logo">
+                    <h1>Explained propriety <br>of out perpetual to you</h1>
+                    <img class="divider" src="images/divider-logo.svg" alt="Divider">
+                    <span>Insipidity the sufficient discretion imprudence resolution sir him decisively.
+                        Proceed how any engaged visitor. Explained propriety of out perpetual his you.
+                        Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.
+                    </span>
+                    <button id="hero-download-button">Download</button>
+                </div>
+
+                <div class="form-box">
+                    <form class="hero-form" id="hero-form-info">
+                        <p class="form-header">
+                            Try Your <span id=hero-form-free>free</span> Trial Today
+                        </p>
+                        <div class="hero-form-middle">
+                            <span>Your details</span>
+
+                            <div class="hero-form-input-info">
+                                <input class="form-input-hero" id="hero-form-firstName" type="text" placeholder="First name" required>
+
+                                <input class="form-input-hero" id="hero-form-lastName" type="text" placeholder="Last name" required>
+
+                                <input class="form-input-hero" id="hero-form-phoneNumber" type="tel" placeholder="Phone number" required>
+
+                            </div>
+                                
+                            <span>Type of subscription</span>
+
+                            <div class="hero-form-selection">
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-monthly" checked>
+                                    <label for="subscription-monthly">Monthly</label>
+                                </div>
+
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-yearly">
+                                    <label for="subscription-yearly">Yearly</label>
+                                </div>
                             </div>
                         </div>
+
+                        <button form="hero-form-info" id="hero-form-submit">
+                            Get started
+                        </button>
+                        
                     </form>
                 </div>
             </div>
         </section>
+
+
+        <section class="socialMedia">
+            <div class="container">
+                <div class="description">
+                    <h2>Social Media</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean euismod bibendum laoreet.</span>
+                </div>
+
+                <div class="socials">
+                    <a href="#" id="socialMedia-facebook">
+                        <img src="images/facebook-logo.svg" alt="Facebook link">
+                    </a>
+                    <a href="#" id="socialMedia-instagram">
+                        <img src="images/instagram-logo.svg" alt="Instagram link">
+                    </a>
+                    <a href="#" id="socialMedia-twitter">
+                        <img src="images/twitter-logo.svg" alt="Twitter link">
+                    </a>
+                    <a href="#" id="socialMedia-pinterest">
+                        <img src="images/pinterest-logo.svg" alt="Pinterest link">
+                    </a>
+                    <a href="#" id="socialMedia-wifi????????????">
+                        <img src="images/connection-logo.svg" alt="connection link">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="container">
+                <nav class="tab-navigation">
+                    <ul>
+                        <li data-target="register" class="active">
+                            <span>Register</span>
+                        </li>
+                        <li data-target="apply">
+                            <span>Apply</span>
+                        </li>
+                        <li data-target="receive">
+                            <span>Receive</span>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-tab="register" class="tab-content active">Register content</div>
+                <div data-tab="apply" class="tab-content">Apply content</div>
+                <div data-tab="receive" class="tab-content">Receive content</div>
+            </div>
+        </section>
+
+        
         <section></section>
         <section></section>
         <section></section>
-        <section></section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2>What our customers are saying?</h2>
+                
+                <!-- Slider main container -->
+                <div class="swiper reviews-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="weather" id="contact">
+            <h2>
+                <span id="weather-in-celsius"></span>
+                <span>°C</span>
+            </h2>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer>
+
+    </footer>
+ 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -13,4 +17,15 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+@keyframes tab-reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
