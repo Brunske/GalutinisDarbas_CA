@@ -45,8 +45,10 @@
             margin: 27px 0 21px 0;
         }
         .divider{
-            width: 84px;
+            border-bottom: 2px solid #FFFFFF;
+            height: 2px;
             margin: 0;
+            width: 10%;
         }
         span{
             color: #FFFFFF;
@@ -84,7 +86,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            border-radius: 8px;
+            border-radius: inherit;
 
             .form-header{
                 display: flex;
@@ -93,9 +95,8 @@
                 background-color: #F5F5F5;
                 padding: 17px 0 16px 0;
                 font-size: 20px;
-                border-radius: inherit;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
+                border-top-left-radius: inherit;
+                border-top-right-radius: inherit;
             
                 #hero-form-free{
                     color: #E27866;
@@ -117,9 +118,8 @@
                 height: 57px;
                 border: none;
                 cursor: pointer;
-                border-radius: inherit;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
+                border-bottom-left-radius: inherit;
+                border-bottom-right-radius: inherit;
             }
 
             .hero-form-middle{
@@ -171,6 +171,8 @@
 
                 .hero-form-selection{
                     display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
 
                     .radio-input-wrap {
                         padding: 0 17px 40px 0 ;
