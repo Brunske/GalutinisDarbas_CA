@@ -69,6 +69,12 @@
             font-size: 14px;
             padding: 12px 22px;
             text-transform: uppercase;
+            transition: ease-in-out .3s;
+
+            &:hover{
+                background-color: rgba(255,255,255,0.5);
+                color: black;
+            }
         }
     }
 
@@ -89,22 +95,20 @@
             border-radius: inherit;
 
             .form-header{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                display: block;
+                text-align: center;
                 background-color: #F5F5F5;
                 padding: 17px 0 16px 0;
                 font-size: 20px;
                 border-top-left-radius: inherit;
                 border-top-right-radius: inherit;
+                user-select: none;
             
                 #hero-form-free{
                     color: #E27866;
                     text-transform: uppercase;
-                    font-family: inherit;
-                    font-weight: inherit;
-                    font-size: inherit;
                 }
+
             }
 
             #hero-form-submit{
@@ -120,6 +124,11 @@
                 cursor: pointer;
                 border-bottom-left-radius: inherit;
                 border-bottom-right-radius: inherit;
+                transition: ease-in-out .3s;
+
+                &:hover{
+                    background-color: #07cf7c;
+                }
             }
 
             .hero-form-middle{
@@ -130,7 +139,7 @@
                 span{
                     font-size: 16px;    
                     padding: 30px 0 20px 0;
-
+                    user-select: none;
                 }
 
                 .hero-form-input-info{

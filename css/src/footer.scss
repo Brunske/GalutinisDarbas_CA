@@ -9,11 +9,14 @@ footer {
         align-items: center;
         width: 100%;
         .logos{
+            user-select: none;
+            
             display: inherit;
             width: 50%;
             justify-content: space-between;
             align-items: center;
             img{
+                -webkit-user-drag:none;
                 width: 20px;
                 height: 20px;
             }

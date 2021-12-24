@@ -45,7 +45,12 @@
                 border-bottom-right-radius: 5px;
                 border-top-right-radius: 5px;
                 border-top-left-radius: 5px;
+                transition: ease-in-out .5s;
                 
+                &:hover{
+                    transform: translate(0,-10px);
+                }
+
                 .pricing{
                     background-color: #333333;
                     padding: 15px 0 20px 0;

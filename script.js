@@ -53,8 +53,9 @@ const swiper = new Swiper('.reviews-swiper', {
 // Get weather data from openweather API
 //
 
-const url = "https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=ae6f4d4b5d3ef4209d9e27805c7d0dcc";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Zarasai&units=metric&appid=ae6f4d4b5d3ef4209d9e27805c7d0dcc";
 const weatherElement = document.getElementById("weather-in-celsius");
+const weatherLocation = document.getElementById("city-weather");
 
 function getCurrentWeatherInCelsius() {
     const http = new XMLHttpRequest();
@@ -72,7 +73,20 @@ function getCurrentWeatherInCelsius() {
     http.send();
 }
 
-window.addEventListener('load', getCurrentWeatherInCelsius)
+function getCurrentWeatherLocation(){
+    const http = new XMLHttpRequest();
+    http.open("GET", url);
+    http.addEventListener('load', function(){
+        const response = JSON.parse(http.response);
+        const location = response.name;
+        const country = response.sys.country;
+        weatherLocation.innerHTML = location + ", " + country;
+    })
+    http.send();
+}
+
+window.addEventListener('load', getCurrentWeatherInCelsius);
+window.addEventListener('load', getCurrentWeatherLocation);
 
 
 

@@ -5,12 +5,13 @@
     .container{
         display: flex;
         justify-content: center;
-        align-items: center;
+        //align-items: center;
         flex-direction: column;
         width: 25%;
         padding:0;
 
         h2 {
+            align-self: center;
             font-size: 36px;
             font-weight: 600;
             color: #FFFFFF;
@@ -19,18 +20,23 @@
         }
 
         >span{
+            align-self: center;
             font-weight: 400;
             font-size: 14px;
             color: #FFFFFF;
-            padding-bottom: 15px;
+            padding-bottom: 18px;
         }
 
         .weather-temp{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items:flex-start;
+            justify-content: flex-start;
+            align-items:center;
+            padding-bottom: 14px;
             
+            img{
+                padding-right: 8px;
+            }
 
             #weather-in-celsius,
             #celsius-symbol{
@@ -38,13 +44,18 @@
                 font-size: 18px;
                 font-weight: 600;
             }
+
+            #city-weather{
+                padding-left: 20px;
+                font-size: 12px;
+                color: #FFFFFF;
+            }
         }
 
         .contact-form{
             background-color: white;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             width: 100%;
             padding: 40px 0;
@@ -69,7 +80,6 @@
                     line-height: 20px;
                     box-sizing: border-box;
                     color: #1C1C1C;
-
                     background: none;
                     border: none;
                     padding: 0;
@@ -79,18 +89,17 @@
 
                 input:focus{
                     outline: none;
-                }
-
-                
+                }  
 
                 ::placeholder{
-                        color:#D8D8D8;
+                    color:#D8D8D8;
                 }
             }
 
 
             .about-selection{
                 display: flex;
+                flex-direction: row;
                 justify-content: flex-start;
                 align-items: flex-start;
             
