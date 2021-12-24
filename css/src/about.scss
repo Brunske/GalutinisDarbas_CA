@@ -45,13 +45,23 @@
 
                     &.active {
                         background-color: #E27866;
+
+                        >span{
+                            transition: .5s ease-in-out;
+                            transform: rotate(0deg);
+                        }
                     }
+
+
                     >span{
                         color: #FFFFFF;
                         text-transform: uppercase;
                         font-size: 14px;
                         font-weight: 600;
+                        transition: .5s ease-in-out;
                         transform:rotate(-45deg);
+                        user-select: none;
+
                     }
                 }
             }
@@ -76,6 +86,7 @@
                 }
                 >h2{
                     padding-bottom: 30px;
+                    color: #FFFFFF;
                 }
             }
         }
@@ -88,26 +99,76 @@
             
 
             .image-item{
+                position: relative;
                 height: auto;
                 width: auto;
-            }
+            
 
-            .item1{
-                grid-column: span 1;
-                justify-self: start;
-            }
-            .item2{
-                grid-column: span 1;
-                justify-self: end;
-                align-self: start;
-            }
-            .item3{
-                grid-column: span 2;
-                justify-self: start;
-                align-self: start;
-            }
+                img{
+                    display: block;    
+                }
 
+                &.item1{
+                    grid-column: span 1;
+                    justify-self: start;
+                    justify-self: start;
+
+                    &:hover .tekstas{
+                        background-color: rgba(226, 120, 102, 0.8);
+                        opacity: 1;
+                    }
+                }
+
+                &.item2{
+                    grid-column: span 1;
+                    justify-self: end;
+                    align-self: start;
+
+                    &:hover .tekstas{
+                        background-color: rgba(226, 120, 102, 0.8);
+                        opacity: 1;
+                    }
+                }
+                &.item3{
+                    grid-column: span 2;
+                    justify-self: start;
+                    align-self: start;
+
+                    &:hover .tekstas{
+                        background-color: rgba(226, 120, 102, 0.8);
+                        opacity: 1;
+                    }
+                }
+
+                &.item1 .tekstas,
+                &.item2 .tekstas,
+                &.item3 .tekstas{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    z-index: 10;
+                    transition: .5s ease;
+                    opacity: 0;
+                    background-color: rgba(226, 120, 102, 0.8);
+
+                    span{
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        user-select: none;
+                    }
+                }
+            }
         }
-
     }
 }

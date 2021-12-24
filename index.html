@@ -172,13 +172,22 @@
 
                 <div class="image-container">
                     <div class="image-item item1">
-                        <img src="images/lettuce-img.jpg" alt="Letuce photo">
+                        <img src="images/lettuce-img.jpg" alt="Letuce photo" >
+                        <div class="tekstas">
+                            <span>Explore</span>
+                        </div>
                     </div>
                     <div class="image-item item2">
                         <img src="images/vegetable-img.jpg" alt="vegetable picture">
+                        <div class="tekstas">
+                            <span>Rick</span>
+                        </div>
                     </div>
                     <div class="image-item item3">
                         <img src="images/staircase-img.jpg" alt="Staircase image">
+                        <div class="tekstas">
+                            <span>Rolled</span>
+                        </div>
                     </div>
                 </div>
 
@@ -188,9 +197,11 @@
         
         <section class="dark-about">
             <div class="container">
+
                 <div class="left-side">
                     <img src="images/logo.svg" alt="Company Logo">
                 </div>
+
                 <div class="right-side">
                     <h2>Erat tempor tempus<br>
                         erat malesuada</h2>
@@ -198,9 +209,10 @@
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
                         euismod bibendum laoreet. Proin gravida dolor sit amet lacus 
                         accumsan et viverra justo commodo.</span>
+
                     <div class="bubble-content">
                         <div class="bubbles">
-                            <div class="bubble">
+                            <div class="bubble-background">
                                 <img src="images/eye-logo.svg" alt="eye image">
                             </div>
                             <div class="description">
@@ -213,7 +225,9 @@
                         </div>
 
                         <div class="bubbles">
-                            <img src="images/chat-bubble-logo.svg" alt="Chat bubble icon">
+                            <div class="bubble-background">
+                                <img src="images/chat-bubble-logo.svg" alt="Chat bubble icon">
+                            </div>
                             <div class="description">
                                 <h3>Title</h3>
                                 <span>
@@ -224,6 +238,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -259,7 +274,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section class="prices" id="pricing">
             <div class="container">
                 <h2>Pricing Options</h2>
                 <div class="divider"></div>
@@ -325,25 +340,47 @@
 
         <section class="reviews" id="reviews">
             <div class="container">
-                <h2>What our customers are saying?</h2>
-                <div class="divider"></div>
+                <div class="pradzia">
+                    <h2>What our customers are saying?</h2>
+                    <div class="divider"></div>
+                </div>
+                
                 
                 <!-- Slider main container -->
                 <div class="swiper reviews-swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
+                        <div class="swiper-slide">      
                             <div class="single-review">
                                 <div class="text">
                                     <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
                                 </div>
                             </div>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-img.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">Jeremy H.</span>
+                                    <span id="work">Manager</span>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
-                                    <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                    <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quia esse eveniet ratione! Eum quam quod, illo aspernatur, ut quisquam tempora, perferendis unde iusto voluptatum fuga minima assumenda sit doloremque.</p>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-img.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">John S.</span>
+                                    <span id="work">Freelancer</span>
                                 </div>
                             </div>
                         </div>
@@ -353,25 +390,66 @@
                                     <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="single-review">
-                                <div class="text">
-                                    <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-img.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">Susan W.</span>
+                                    <span id="work">Photographer</span>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
-                                    <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                    <p>Yes, I have a belt. I wear big pants because my ass is huge. So I can’t go to a store by off the rack a size that is appropriate for my waist because they don’t fit my ass!</p>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-img-JC.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">John C.</span>
+                                    <span id="work">Invisible</span>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="single-review">
                                 <div class="text">
-                                    <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                                    <p>I will build a great, great wall on our southern border, and I will have Mexico pay for that wall. Mark my words.</p>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-img-CL.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">Donald T.</span>
+                                    <span id="work">Clown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-review">
+                                <div class="text">
+                                    <p>Never gonna give you up
+                                        Never gonna let you down
+                                        Never gonna run around and desert you
+                                        Never gonna make you cry
+                                        Never gonna say goodbye
+                                        Never gonna tell a lie and hurt you</p>
+                                </div>
+                            </div>
+                            <div class="customer-info">
+                                <div class="customer-photo">
+                                    <img src="images/customer-imgg.jpg" alt="Customer profile picture">
+                                </div>
+                                <div class="customer-data">
+                                    <span id="author">Rick A.</span>
+                                    <span id="work">Rick Roll</span>
                                 </div>
                             </div>
                         </div>

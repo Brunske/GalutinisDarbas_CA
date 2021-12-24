@@ -34,7 +34,7 @@
                 border-bottom: 1px solid #E27866;
                 height: 2px;
                 margin: 1.5em 0px 1.5em;
-                width: 35%;
+                width: 40%;
             }
 
             h2,h3,span{
@@ -55,19 +55,26 @@
                 .bubbles{
                     display: flex;
                     flex-direction:row;
+                    align-items: flex-start;
+                    // justify-content: space-evenly;
                     padding-bottom: 35px;
                     width: 100%;
 
-                    .bubble{
+                    .bubble-background{
+
                         display: flex;
                         justify-content: center;
-                        align-items: flex-start;
-                        width: 15%;
+                        align-items: center;
+                        width: 10%;
+                        height: 50px;
                         border: #E27866 solid 1px;
                         background-color: #E27866;
                         border-radius: 50%;
 
                         img{
+                            display: block;
+                            margin: 0 auto;
+                            text-align: center;
                             width: 40%;
                         }
                     }
@@ -75,8 +82,18 @@
                     .description{
                         display: flex;
                         flex-direction: column;
+                        width: 80%;
+                        padding-left: 20px;
+
+                        h3{
+                            font-size: 14px;
+                            font-weight: 600;
+                            padding-bottom: 6px;
+                        }
 
                         span{
+                            font-size: 14px;
+                            font-weight: 400;
                             padding-bottom: 0;
                         }
                     }
