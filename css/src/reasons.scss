@@ -15,6 +15,7 @@
             font-size: 36px;
             font-weight: 600;
             text-transform: uppercase;
+            text-align: center;
         }
 
         .divider{
@@ -29,6 +30,7 @@
             font-size: 14px;
             color: #86878B;
             padding-bottom: 65px;
+            text-align: center;
         }
 
         .reasons-content{
@@ -61,5 +63,23 @@
             }
         }
 
+    }
+}
+
+@media all and (max-width:860px){
+    .reasons{
+        padding: 50px 0;
+        .container{
+            >span{
+                padding-bottom: 50px;
+            }
+            .reasons-content{
+                .content{
+                    img{
+                        width: 20%;
+                    }
+                }
+            }
+        }
     }
 }

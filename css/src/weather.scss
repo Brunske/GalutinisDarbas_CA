@@ -17,6 +17,7 @@
             color: #FFFFFF;
             padding-bottom: 23px;
             text-transform: uppercase;
+            text-align: center;
         }
 
         >span{
@@ -150,6 +151,20 @@
                 border-radius: 5px;
             }
 
+        }
+    }
+}
+
+@media all and (max-width:860px){
+    .weather{
+        .container{
+            width: 35%;
+            .contact-form{
+                padding: 20px 0;
+                .about-inputs{
+                    width: 90%;
+                }
+            }
         }
     }
 }

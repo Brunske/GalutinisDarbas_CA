@@ -32,6 +32,7 @@
     .content{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         
         width: 65%;
 
@@ -80,6 +81,7 @@
 
     .form-box {
         //max-width: 360px;
+        display: flex;
         width: 100%;
         max-width: 30%;
         background-color: #fff;
@@ -215,4 +217,17 @@
             }
         }
     }   
+}
+
+@media all and (max-width:860px){
+    .hero{
+        padding: 100px 0;
+        .form-box{
+            .hero-form{
+                .hero-form-middle{
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
 }

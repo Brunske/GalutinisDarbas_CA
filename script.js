@@ -31,7 +31,6 @@ const swiper = new Swiper('.reviews-swiper', {
     speed: 900,
     slidesPerView: 1,
     spaceBetween: 50,
-    // slidesPerGroup: 3,
     autoHeight: true,
     loop: true,
     autoplay: {
@@ -42,9 +41,13 @@ const swiper = new Swiper('.reviews-swiper', {
         clickable: true
     },
     breakpoints: {
-        800: {
+        1000: {
           slidesPerView: 3,
-          spaceBetween: 120
+          spaceBetween: 60
+        },
+        600: {
+            slidesPerView:2,
+            spaceBetween: 60
         }
       }
 });
