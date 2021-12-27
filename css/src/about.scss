@@ -210,3 +210,20 @@
         }
     }
 }
+
+@media all and (max-width:600px){
+    .about{
+        padding: 50px 0;
+        .container{
+            .tab-content{
+                &.active{
+                    width: 95%;
+                    padding-right: 0;
+                }
+            }
+            .image-container{
+                display: none;
+            }
+        }
+    }
+}

@@ -83,3 +83,24 @@
         }
     }
 }
+
+@media all and (max-width:550px){
+    .reasons{
+        .container{
+            .reasons-content{
+                flex-direction: column;
+                align-items: center;
+                .content{
+                    width: 70%;
+                    padding-bottom: 45px;
+                    img{
+                        width: 15%;
+                    }
+                    h4{
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

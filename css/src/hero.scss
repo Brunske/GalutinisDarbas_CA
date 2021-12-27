@@ -42,7 +42,6 @@
         h1{
             color: #FFFFFF;
             font-size: 36px;
-            width: 426px;
             margin: 27px 0 21px 0;
         }
         .divider{
@@ -82,6 +81,8 @@
     .form-box {
         //max-width: 360px;
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
         max-width: 30%;
         background-color: #fff;
@@ -136,7 +137,7 @@
             .hero-form-middle{
                 display: flex;
                 flex-direction: column;
-                padding: 0 50px;
+                padding: 0 25px;
                 
                 span{
                     font-size: 16px;    
@@ -222,10 +223,44 @@
 @media all and (max-width:860px){
     .hero{
         padding: 100px 0;
-        .form-box{
-            .hero-form{
-                .hero-form-middle{
-                    padding: 0 15px;
+        .container{
+            display: flex;
+            flex-direction: column;
+            .content{
+                width: 95%;
+                >span{
+                    margin-right: 0;
+                }
+                button{
+                    margin-bottom: 25px;
+                }
+            }
+            .form-box{
+                display: flex;
+                align-self: center;
+                max-width: 50%;
+                .hero-form{
+                    .hero-form-middle{
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width:500px){
+    .hero{
+        .container{
+            .form-box{
+                display: flex;
+                align-self: center;
+                max-width: 80%;
+                .hero-form{
+                    .hero-form-middle{
+                        padding: 0 15px;
+                    }
                 }
             }
         }

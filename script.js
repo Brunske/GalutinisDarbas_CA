@@ -96,3 +96,74 @@ window.addEventListener('load', getCurrentWeatherLocation);
 //Get weather data from PoenWeather
 //API key below
 //ae6f4d4b5d3ef4209d9e27805c7d0dcc
+
+
+
+//
+//Mobile menu
+//
+const bar = document.getElementById('bar');
+const close = document.getElementById('close');
+const nav = document.getElementById('navbar');
+
+if (bar){
+    bar.addEventListener('click', () => {
+        nav.classList.add('active');
+    })
+}
+
+if (close){
+    close.addEventListener('click', () => {
+        nav.classList.remove('active');
+    })
+}
+
+//
+// form validation
+//
+
+function validateForm() {
+    let x = document.forms["hero-form"]["fname"].value;
+    if (x == "") {
+      alert("First name must be filled out");
+      return false;
+    }
+    let y = document.forms["hero-form"]["lname"].value;
+    if (y == "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+    let z = document.forms["hero-form"]["pnumb"].value;
+    if (z == "") {
+        alert("Phone number must be filled out");
+        return false;
+    }
+    let xx = document.forms["hero-form"]["subscription"].value;
+    if (xx == "") {
+        alert("Subscription must be selected");
+        return false;
+    }
+  }
+
+  function validateWeatherForm() {
+    let x = document.forms["weather-form"]["fname"].value;
+    if (x == "") {
+      alert("First name must be filled out");
+      return false;
+    }
+    let y = document.forms["weather-form"]["lname"].value;
+    if (y == "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+    let z = document.forms["weather-form"]["pnumb"].value;
+    if (z == "") {
+        alert("Phone number must be filled out");
+        return false;
+    }
+    let xx = document.forms["weather-form"]["subscription"].value;
+    if (xx == "") {
+        alert("Subscription must be selected");
+        return false;
+    }
+  }

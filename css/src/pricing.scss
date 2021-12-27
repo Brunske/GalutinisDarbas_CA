@@ -13,6 +13,8 @@
             font-weight: 600;
             color: #FFFFFF;
             text-transform: uppercase;
+            word-wrap: break-word; 
+            text-align: center;
         }
 
         .divider{
@@ -143,6 +145,22 @@
         .container{
             >span{
                 padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media all and (max-width:550px){
+    .prices{
+        .container{
+            .option-content{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .option{
+                    width: 60%;
+                    padding-bottom: 30px;
+                }
             }
         }
     }

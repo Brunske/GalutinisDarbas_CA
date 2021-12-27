@@ -22,12 +22,18 @@ footer {
             }
         }
 
-        span{
-            color: #707070;
-            opacity: 0.5;
-            font-size: 18px;
-            font-weight: 400;
+        .copy-right{
+            width: 45%;
+            display: inherit;
+            justify-content: flex-end;
+            span{
+                color: #707070;
+                opacity: 0.5;
+                font-size: 18px;
+                font-weight: 400;
+            }
         }
+        
 
     }
 }
